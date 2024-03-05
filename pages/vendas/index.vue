@@ -1,6 +1,6 @@
 <template>
   <div>
-    <TemplateTermOfUsePage />
+    <h1>Test</h1>
   </div>
 </template>
 <script>

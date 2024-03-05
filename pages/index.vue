@@ -1,6 +1,6 @@
 <template>
   <div>
-    <TemplateHome />
+    <h1>test de marketplace</h1>
   </div>
 </template>
 <script>
