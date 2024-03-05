@@ -1,0 +1,256 @@
+:root {
+  /* Colors */
+  /* Brand Color */
+  --brandPrimaryDarkKest: rgb(22, 11, 50);
+  --brandPrimaryDark9: rgb(44, 22, 100);
+  --brandPrimaryDark8: rgb(65, 32, 151);
+  --brandPrimaryDark7: rgb(87, 43, 201);
+  --brandPrimary6: rgb(109, 54, 251);
+  --brandPrimary5: rgb(138, 94, 252);
+  --brandPrimary4: rgb(167, 134, 253);
+  --brandPrimaryLight3: rgb(197, 175, 253);
+  --brandPrimaryLight2: rgb(226, 215, 254);
+  --brandPrimaryLightTest: rgb(244, 240, 255);
+
+  --brandSecondaryDarkKest: rgb(31, 51, 10);
+  --brandSecondaryDark9: rgb(61, 102, 20);
+  --brandSecondaryDark8: rgb(92, 153, 31);
+  --brandSecondaryDark7: rgb(122, 204, 41);
+  --brandSecondary6: rgb(153, 255, 51);
+  --brandSecondary5: rgb(173, 255, 92);
+  --brandSecondary4: rgb(194, 255, 133);
+  --brandSecondaryLight3: rgb(214, 255, 173);
+  --brandSecondaryLight2: rgb(235, 255, 214);
+  --brandSecondaryLightTest: rgb(245, 255, 235);
+
+  /* Auxiliary Color */
+
+  --auxiliaryRedDarkKest: rgb(78, 0, 0);
+  --auxiliaryRedDark9: rgb(117, 0, 0);
+  --auxiliaryRedDark8: rgb(158, 11, 11);
+  --auxiliaryRedDark7: rgb(202, 21, 21);
+  --auxiliaryRed6: rgb(255, 46, 46);
+  --auxiliaryRed5: rgb(254, 95, 95);
+  --auxiliaryRed4: rgb(255, 151, 151);
+  --auxiliaryRedLight3: rgb(255, 184, 184);
+  --auxiliaryRedLight2: rgb(255, 215, 215);
+  --auxiliaryRedLightTest: rgb(255, 239, 239);
+
+  --auxiliaryOrangeDarkKest: rgb(119, 71, 0);
+  --auxiliaryOrangeDark9: rgb(156, 94, 0);
+  --auxiliaryOrangeDark8: rgb(186, 112, 2);
+  --auxiliaryOrangeDark7: rgb(216, 129, 0);
+  --auxiliaryOrange6: rgb(255, 153, 0);
+  --auxiliaryOrange5: rgb(255, 175, 54);
+  --auxiliaryOrange4: rgb(255, 196, 107);
+  --auxiliaryOrangeLight3: rgb(255, 212, 147);
+  --auxiliaryOrangeLight2: rgb(255, 226, 183);
+  --auxiliaryOrangeLightTest: rgb(255, 243, 224);
+
+  --auxiliaryYellowDarkKest: rgb(125, 106, 0);
+  --auxiliaryYellowDark9: rgb(161, 136, 3);
+  --auxiliaryYellowDark8: rgb(185, 156, 3);
+  --auxiliaryYellowDark7: rgb(222, 187, 0);
+  --auxiliaryYellow6: rgb(255, 214, 0);
+  --auxiliaryYellow5: rgb(255, 226, 77);
+  --auxiliaryYellow4: rgb(255, 232, 113);
+  --auxiliaryYellowLight3: rgb(255, 237, 140);
+  --auxiliaryYellowLight2: rgb(255, 243, 181);
+  --auxiliaryYellowLightTest: rgb(255, 249, 222);
+
+  --auxiliaryBlueDarkKest: rgb(9, 65, 121);
+  --auxiliaryBlueDark9: rgb(10, 95, 180);
+  --auxiliaryBlueDark8: rgb(21, 113, 205);
+  --auxiliaryBlueDark7: rgb(29, 136, 243);
+  --auxiliaryBlue6: rgb(51, 153, 255);
+  --auxiliaryBlue5: rgb(107, 181, 255);
+  --auxiliaryBlue4: rgb(150, 202, 255);
+  --auxiliaryBlueLight3: rgb(173, 214, 255);
+  --auxiliaryBlueLight2: rgb(194, 226, 255);
+  --auxiliaryBlueLightTest: rgb(233, 244, 255);
+
+  --auxiliaryGreenDarkKest: rgb(27, 91, 16);
+  --auxiliaryGreenDark9: rgb(41, 122, 27);
+  --auxiliaryGreenDark8: rgb(57, 153, 41);
+  --auxiliaryGreenDark7: rgb(75, 182, 57);
+  --auxiliaryGreen6: rgb(94, 195, 77);
+  --auxiliaryGreen5: rgb(114, 215, 97);
+  --auxiliaryGreen4: rgb(139, 227, 124);
+  --auxiliaryGreenLight3: rgb(164, 244, 151);
+  --auxiliaryGreenLight2: rgb(191, 255, 180);
+  --auxiliaryGreenLightTest: rgb(229, 255, 225);
+
+  --auxiliaryPinkDarkKest: rgb(121, 0, 91);
+  --auxiliaryPinkDark9: rgb(166, 19, 129);
+  --auxiliaryPinkDark8: rgb(194, 33, 153);
+  --auxiliaryPinkDark7: rgb(223, 50, 179);
+  --auxiliaryPink6: rgb(255, 63, 206);
+  --auxiliaryPink5: rgb(255, 104, 217);
+  --auxiliaryPink4: rgb(255, 138, 225);
+  --auxiliaryPinkLight3: rgb(255, 160, 231);
+  --auxiliaryPinkLight2: rgb(255, 188, 238);
+  --auxiliaryPinkLightTest: rgb(255, 229, 249);
+
+  /* Gradient Linear */
+
+  --gradientPurble: linear-gradient(
+    135deg,
+    rgb(251, 251, 255) 0%,
+    rgba(244, 240, 255, 0) 100%
+  );
+  --gradientGreen: linear-gradient(
+    135deg,
+    rgb(229, 255, 225) 0%,
+    rgba(229, 255, 225, 0) 100%
+  );
+  --gradientRed: linear-gradient(
+    135deg,
+    rgb(255, 239, 239) 0%,
+    rgba(255, 239, 239, 0) 100%
+  );
+  --gradientPink: linear-gradient(
+    135deg,
+    rgb(255, 229, 249) 0%,
+    rgba(255, 229, 249, 0) 100%
+  );
+  --gradientOrange: linear-gradient(
+    135deg,
+    rgb(255, 243, 224) 0%,
+    rgba(255, 243, 224, 0) 100%
+  );
+  --gradientYellow: linear-gradient(
+    135deg,
+    rgb(255, 249, 222) 0%,
+    rgba(255, 249, 222, 0) 100%
+  );
+  --gradientBlue: linear-gradient(
+    135deg,
+    rgb(233, 244, 255) 0%,
+    rgba(233, 244, 255, 0) 100%
+  );
+  --gradientNeutral: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+
+  /* Neutral Color */
+
+  --neutralDarkGrey: rgb(11, 11, 14);
+  --neutralDarkGrey1: rgb(13, 13, 18);
+  --neutralDarkGrey2: rgb(25, 25, 30);
+  --neutralDarkGrey3: rgb(37, 37, 41);
+  --neutralDarkGrey4: rgb(52, 52, 56);
+  --neutralDarkGrey5: rgb(65, 65, 70);
+  --neutralDarkGrey6: rgb(80, 80, 87);
+  --neutralDarkGrey7: rgb(91, 91, 97);
+  --neutralDarkGrey8: rgb(109, 109, 118);
+  --neutralDarkGrey9: rgb(121, 121, 131);
+  --neutralDarkGrey10: rgb(139, 139, 152);
+  --neutralDarkGrey11: rgb(157, 157, 171);
+
+  --neutralLightGrey11: rgb(40, 40, 59);
+  --neutralLightGrey10: rgb(67, 67, 96);
+  --neutralLightGrey9: rgb(98, 98, 132);
+  --neutralLightGrey8: rgb(119, 119, 153);
+  --neutralLightGrey7: rgb(131, 131, 164);
+  --neutralLightGrey6: rgb(148, 148, 184);
+  --neutralLightGrey5: rgb(169, 169, 204);
+  --neutralLightGrey4: rgb(190, 190, 221);
+  --neutralLightGrey3: rgb(220, 220, 240);
+  --neutralLightGrey2: rgb(235, 235, 248);
+  --neutralLightGrey1: rgb(247, 247, 252);
+  --neutralLightGrey: rgb(255, 255, 255);
+
+  /* Typography */
+  /* Fonts size */
+
+  --fontSizeTitleH1: 64px;
+  --fontSizeTitleH2: 56px;
+  --fontSizeTitleH3: 48px;
+  --fontSizeTitleH4: 40px;
+  --fontSizeTitleH5: 36px;
+  --fontSizeTitleH6: 32px;
+  --fontSizeTitleH7: 24px;
+
+  --fontSizeTextP1: 24px;
+  --fontSizeTextP2: 20px;
+  --fontSizeTextP3: 18px;
+  --fontSizeTextP4: 16px;
+  --fontSizeTextP5: 14px;
+  --fontSizeTextP6: 12px;
+  --fontSizeTextP7: 11px;
+
+}
+
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+*::placeholder {
+  color: var(--neutralDarkGrey11);
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--neutralLightGrey2);
+}
+
+input {
+  border: 0;
+}
+
+.animate-icon {
+  animation: floatIcon 3s ease-in-out infinite;
+}
+
+
+@keyframes floatIcon {
+  0% {
+    -webkit-transform: translatey(16px);
+    transform: translateY(-1rem);
+  }
+  50% {
+    -webkit-transform: translatey(-8px);
+    transform: translatey(-8px);
+  }
+  100% {
+    -webkit-transform: translatey(-16px);
+    transform: translatey(-16px);
+  }
+}
+
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 4rem 1rem;
+}
