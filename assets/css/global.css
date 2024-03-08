@@ -180,9 +180,7 @@
   --fontSizeTextP5: 14px;
   --fontSizeTextP6: 12px;
   --fontSizeTextP7: 11px;
-
 }
-
 
 *,
 ::after,
@@ -229,7 +227,6 @@ input {
   animation: floatIcon 3s ease-in-out infinite;
 }
 
-
 @keyframes floatIcon {
   0% {
     -webkit-transform: translatey(16px);
@@ -244,7 +241,6 @@ input {
     transform: translatey(-16px);
   }
 }
-
 
 .container {
   max-width: 1280px;

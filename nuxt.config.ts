@@ -2,8 +2,7 @@ import { NuxtConfig } from "nuxt";
 
 const config: NuxtConfig = {
   head: {
-    title:
-      "Braip a primeira e a melhor plataforma de CRO - Conversion rate optimization  do Brasil",
+    title: "test in title",
     htmlAttrs: {
       lang: "pt-br",
     },
@@ -15,8 +14,7 @@ const config: NuxtConfig = {
       {
         hid: "description",
         name: "description",
-        content:
-          "A Braip oferece as melhores funcionalidades e ferramentas para você que deseja empreender no meio digital. Em nossa plataforma você comercializa seus produtos e recebe pagamentos de forma segura e rápida.",
+        content: "Test in description",
       },
       { name: "format-detection", content: "telephone=no" },
     ],
