@@ -2,6 +2,7 @@
 declare module 'vue' {
   export interface GlobalComponents {
     'MoleculeCardImagem': typeof import("../components/molecules/CardImagem.vue")['default']
+    'MoleculeModalCenter': typeof import("../components/molecules/ModalCenter.vue")['default']
     'AtomButton': typeof import("../components/atoms/Button.vue")['default']
     'AtomButtonArrows': typeof import("../components/atoms/ButtonArrows.vue")['default']
     'AtomButtonLink': typeof import("../components/atoms/ButtonLink.vue")['default']
@@ -33,6 +34,7 @@ declare module 'vue' {
     'Html': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Html']
     'Body': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
     'LazyMoleculeCardImagem': typeof import("../components/molecules/CardImagem.vue")['default']
+    'LazyMoleculeModalCenter': typeof import("../components/molecules/ModalCenter.vue")['default']
     'LazyAtomButton': typeof import("../components/atoms/Button.vue")['default']
     'LazyAtomButtonArrows': typeof import("../components/atoms/ButtonArrows.vue")['default']
     'LazyAtomButtonLink': typeof import("../components/atoms/ButtonLink.vue")['default']
@@ -67,6 +69,7 @@ declare module 'vue' {
 }
 
 export const MoleculeCardImagem: typeof import("../components/molecules/CardImagem.vue")['default']
+export const MoleculeModalCenter: typeof import("../components/molecules/ModalCenter.vue")['default']
 export const AtomButton: typeof import("../components/atoms/Button.vue")['default']
 export const AtomButtonArrows: typeof import("../components/atoms/ButtonArrows.vue")['default']
 export const AtomButtonLink: typeof import("../components/atoms/ButtonLink.vue")['default']
@@ -98,6 +101,7 @@ export const Head: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const Html: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Html']
 export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
 export const LazyMoleculeCardImagem: typeof import("../components/molecules/CardImagem.vue")['default']
+export const LazyMoleculeModalCenter: typeof import("../components/molecules/ModalCenter.vue")['default']
 export const LazyAtomButton: typeof import("../components/atoms/Button.vue")['default']
 export const LazyAtomButtonArrows: typeof import("../components/atoms/ButtonArrows.vue")['default']
 export const LazyAtomButtonLink: typeof import("../components/atoms/ButtonLink.vue")['default']

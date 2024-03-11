@@ -11,7 +11,7 @@
           :type="atomParagraphFontSize"
           :color="atomParagraphColor"
         >
-          {{ item.paragraph }}
+          Preço: {{ formatPrice(item.price) }}
         </AtomParagraph>
       </div>
       <div>
@@ -21,7 +21,7 @@
           :border-color="atomButtonBorderColor"
           :hover-border-color="atomButtonBorderColorHover"
           :max-width="atomButtonMaxWidth"
-          @click="clickButtonON"
+          @click="openModal"
           >{{ textAtomButton }}</AtomButton
         >
       </div>
@@ -78,8 +78,17 @@ export default {
     },
   },
   methods: {
-    clickButtonON() {
-      window.open("_blank");
+    openModal() {
+      this.$emit("open-modal");
+    },
+    formatPrice(number) {
+      if (number >= 1000000) {
+        return (number / 1000000).toFixed(1) + " mi";
+      }
+      if (number >= 1000) {
+        return (number / 10000).toFixed(0) + " mil";
+      }
+      return number;
     },
   },
 };
