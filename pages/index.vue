@@ -1,5 +1,6 @@
 <template>
   <div>
+    <MoleculeMyHeaderNav />
     <h1>test de marketplace</h1>
     <MoleculeCardImagem
       v-if="isModalVisible === false"
