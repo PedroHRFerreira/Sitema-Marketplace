@@ -1,25 +1,30 @@
 <template>
   <header class="container-nav">
     <article class="section-header">
-      <div class="content-text">
-        <AtomIcon name="marketplace" width="68px" height="60px" />
-        <AtomIcon name="menu" width="53px" height="45px" />
-        <AtomIcon name="users" width="68px" height="60px" />
+      <div class="icons-column">
+        <div v-for="(icon, index) in icons" :key="index" class="content-text">
+          <AtomIcon
+            class="icon"
+            :name="icon.icones"
+            :width="icon.width"
+            :height="icon.height"
+          />
+        </div>
       </div>
       <section class="content">
         <div class="header-fixed">
           <AtomTitle
-            class="color-title"
-            font-size="42px"
+            :font-weight="tileFontWeight"
+            :font-size="titleFontSize"
             :style="{ color: titleColor }"
-            >Sistema de marketplace</AtomTitle
+            >{{ textTitle }}</AtomTitle
           >
         </div>
         <img
-          src="/images/nav/du-dudu-e-edu_f7e4tz.webp"
-          alt="du dudu e edu"
+          :src="imageSrc"
+          :alt="imageAlt"
           width="100%"
-          height="650px"
+          :height="imageHeight"
         />
       </section>
     </article>
@@ -29,6 +34,52 @@
 <script>
 export default {
   name: "MoleculesMyHeaderNav",
+  props: {
+    icons: {
+      type: Array,
+      default: () => [
+        {
+          icones: "marketplace",
+          width: "68px",
+          height: "60px",
+        },
+        {
+          icones: "menu",
+          width: "53px",
+          height: "45px",
+        },
+        {
+          icones: "users",
+          width: "68px",
+          height: "60px",
+        },
+      ],
+    },
+    tileFontWeight: {
+      type: String,
+      default: "500",
+    },
+    titleFontSize: {
+      type: String,
+      default: "42px",
+    },
+    textTitle: {
+      type: String,
+      default: "Sistema de marketplace",
+    },
+    imageSrc: {
+      type: String,
+      default: "/images/nav/du-dudu-e-edu_f7e4tz.webp",
+    },
+    imageAlt: {
+      type: String,
+      default: "imagem do du, dudu e edu",
+    },
+    imageHeight: {
+      type: String,
+      default: "650px",
+    },
+  },
   setup() {
     const titleColor = ref("var(--neutralDarkGrey1)");
     let prevScrollPos = 0;
@@ -67,23 +118,29 @@ export default {
 
 .section-header {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   position: relative;
 }
-
+.icons-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 92%;
+  padding: 20px;
+}
 .content-text {
   padding: 20px;
   display: flex;
-  gap: 50px;
   flex-direction: column;
   background: linear-gradient(
     to bottom,
-    #fff 50%,
-    rgba(255, 255, 255, 0) 50%,
+    #fff 90%,
+    rgba(255, 255, 255, 0) 100%,
     #000 100%
   );
 }
-
 .section-header .content::before {
   padding: 10px;
   content: "";
