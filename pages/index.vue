@@ -12,6 +12,7 @@
       :paragraph="itens"
       @modal-closed="modalClosed"
     />
+    <MoleculeMyFooterNav />
   </div>
 </template>
 <script>

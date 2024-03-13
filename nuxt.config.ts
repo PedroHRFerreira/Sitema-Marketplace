@@ -18,7 +18,7 @@ const config: NuxtConfig = {
       },
       { name: "format-detection", content: "telephone=no" },
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    link: [{ rel: "icon", type: "null", href: "null" }],
   },
 
   devtools: { enabled: process.env.NODE_ENV === "development" },

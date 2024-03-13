@@ -3,6 +3,7 @@ declare module 'vue' {
   export interface GlobalComponents {
     'MoleculeCardImagem': typeof import("../components/molecules/CardImagem.vue")['default']
     'MoleculeModalCenter': typeof import("../components/molecules/ModalCenter.vue")['default']
+    'MoleculeMyFooterNav': typeof import("../components/molecules/MyFooterNav.vue")['default']
     'MoleculeMyHeaderNav': typeof import("../components/molecules/MyHeaderNav.vue")['default']
     'AtomButton': typeof import("../components/atoms/Button.vue")['default']
     'AtomButtonArrows': typeof import("../components/atoms/ButtonArrows.vue")['default']
@@ -35,6 +36,7 @@ declare module 'vue' {
     'Body': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
     'LazyMoleculeCardImagem': typeof import("../components/molecules/CardImagem.vue")['default']
     'LazyMoleculeModalCenter': typeof import("../components/molecules/ModalCenter.vue")['default']
+    'LazyMoleculeMyFooterNav': typeof import("../components/molecules/MyFooterNav.vue")['default']
     'LazyMoleculeMyHeaderNav': typeof import("../components/molecules/MyHeaderNav.vue")['default']
     'LazyAtomButton': typeof import("../components/atoms/Button.vue")['default']
     'LazyAtomButtonArrows': typeof import("../components/atoms/ButtonArrows.vue")['default']
@@ -70,6 +72,7 @@ declare module 'vue' {
 
 export const MoleculeCardImagem: typeof import("../components/molecules/CardImagem.vue")['default']
 export const MoleculeModalCenter: typeof import("../components/molecules/ModalCenter.vue")['default']
+export const MoleculeMyFooterNav: typeof import("../components/molecules/MyFooterNav.vue")['default']
 export const MoleculeMyHeaderNav: typeof import("../components/molecules/MyHeaderNav.vue")['default']
 export const AtomButton: typeof import("../components/atoms/Button.vue")['default']
 export const AtomButtonArrows: typeof import("../components/atoms/ButtonArrows.vue")['default']
@@ -102,6 +105,7 @@ export const Html: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
 export const LazyMoleculeCardImagem: typeof import("../components/molecules/CardImagem.vue")['default']
 export const LazyMoleculeModalCenter: typeof import("../components/molecules/ModalCenter.vue")['default']
+export const LazyMoleculeMyFooterNav: typeof import("../components/molecules/MyFooterNav.vue")['default']
 export const LazyMoleculeMyHeaderNav: typeof import("../components/molecules/MyHeaderNav.vue")['default']
 export const LazyAtomButton: typeof import("../components/atoms/Button.vue")['default']
 export const LazyAtomButtonArrows: typeof import("../components/atoms/ButtonArrows.vue")['default']
