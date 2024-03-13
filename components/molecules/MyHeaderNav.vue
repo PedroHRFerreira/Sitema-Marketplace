@@ -82,18 +82,16 @@ export default {
   },
   setup() {
     const titleColor = ref("var(--neutralDarkGrey1)");
-    let prevScrollPos = 0;
+    let scrollTimer;
 
     const handleScroll = () => {
-      const currentScrollPos = window.scrollY || window.pageYOffset;
+      clearTimeout(scrollTimer);
 
-      if (currentScrollPos > prevScrollPos) {
-        titleColor.value = "aqua";
-      } else {
+      titleColor.value = "aqua";
+
+      scrollTimer = setTimeout(() => {
         titleColor.value = "var(--neutralDarkGrey1)";
-      }
-
-      prevScrollPos = currentScrollPos;
+      }, 1000);
     };
 
     onMounted(() => {
