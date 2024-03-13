@@ -10,18 +10,20 @@
         />
         <div class="end-footer_content">
           <div>
-            <AtomTile class="text">Feito por Pedro H. Rodrigues ;)</AtomTile>
+            <AtomTile font-size="26px" class="text"
+              >Feito por Pedro H. Rodrigues ;)</AtomTile
+            >
           </div>
           <ul class="content-icon">
             <li v-for="(icon, index) in icons" :key="index">
-              <a :href="icon.href">
+              <router-link :to="icon.href" class="icon">
                 <AtomIcon
                   :name="icon.name"
                   :width="icon.width"
                   :height="icon.height"
                   :style="{ color: aquaColor }"
                 />
-              </a>
+              </router-link>
             </li>
           </ul>
         </div>
@@ -31,6 +33,7 @@
 </template>
 
 <script>
+import { ref } from "vue";
 export default {
   name: "MoleculesMyFooterNav",
   props: {
@@ -41,19 +44,19 @@ export default {
           name: "instagram",
           width: "68px",
           height: "60px",
-          href: "https://www.instagram.com/",
+          href: "https://www.instagram.com/dev_ph.rodrigues/",
         },
         {
           name: "linkedin",
           width: "68px",
           height: "60px",
-          href: "https://www.linkedin.com/",
+          href: "/linkedin",
         },
         {
           name: "github",
           width: "60px",
           height: "60px",
-          href: "https://github.com/",
+          href: "https://github.com/PedroHRFerreira",
         },
       ],
     },
@@ -109,12 +112,12 @@ export default {
   top: 0;
   left: 0;
   width: 100%;
-  max-height: 1200px;
+  max-height: 800px;
   height: 100%;
   background: linear-gradient(
     to top,
-    rgba(255, 255, 255, 0) 10%,
-    #fff 90%,
+    rgba(255, 255, 255, 0) 45%,
+    #fff 85%,
     #000 100%
   );
   border-bottom-left-radius: 50px;
@@ -129,6 +132,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  padding: 5px;
 }
 .text {
   color: var(--neutralDarkGrey1);
@@ -143,6 +147,5 @@ export default {
 }
 .icon {
   cursor: pointer;
-  margin-right: 10px;
 }
 </style>
