@@ -16,11 +16,54 @@
   </div>
 </template>
 <script>
+6;
 export default {
   name: "IndexPage",
   data() {
     return {
       cards: [
+        {
+          imageSrc: "/images/product/test-product.webp",
+          imageAlt: "imagem do produto",
+          title: "Anuncio do produto",
+          price: "10000",
+        },
+        {
+          imageSrc: "/images/product/test-product.webp",
+          imageAlt: "imagem do produto",
+          title: "Anuncio do produto",
+          price: "10000",
+        },
+        {
+          imageSrc: "/images/product/test-product.webp",
+          imageAlt: "imagem do produto",
+          title: "Anuncio do produto",
+          price: "10000",
+        },
+        {
+          imageSrc: "/images/product/test-product.webp",
+          imageAlt: "imagem do produto",
+          title: "Anuncio do produto",
+          price: "10000",
+        },
+        {
+          imageSrc: "/images/product/test-product.webp",
+          imageAlt: "imagem do produto",
+          title: "Anuncio do produto",
+          price: "10000",
+        },
+        {
+          imageSrc: "/images/product/test-product.webp",
+          imageAlt: "imagem do produto",
+          title: "Anuncio do produto",
+          price: "10000",
+        },
+        {
+          imageSrc: "/images/product/test-product.webp",
+          imageAlt: "imagem do produto",
+          title: "Anuncio do produto",
+          price: "10000",
+        },
         {
           imageSrc: "/images/product/test-product.webp",
           imageAlt: "imagem do produto",

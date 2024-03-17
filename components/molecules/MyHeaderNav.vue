@@ -150,7 +150,7 @@ export default {
   background: linear-gradient(
     to bottom,
     rgba(255, 255, 255, 0) 0%,
-    #fff 50%,
+    #fff 65%,
     #000 100%
   );
 }
