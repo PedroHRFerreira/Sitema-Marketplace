@@ -2,7 +2,7 @@
   <footer class="container-nav">
     <article class="section-footer">
       <section class="content">
-        <img
+        <NuxtImg
           :src="imageSrc"
           :alt="imageAlt"
           width="100%"
@@ -50,7 +50,7 @@ export default {
           name: "linkedin",
           width: "68px",
           height: "60px",
-          href: "/linkedin",
+          href: "https://www.linkedin.com",
         },
         {
           name: "github",
