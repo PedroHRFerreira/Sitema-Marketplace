@@ -1,9 +1,9 @@
 <template>
   <main class="content">
     <div>
-      <OrganismHeaderNav v-if="!isLinksPage" />
+      <MoleculesMyHeaderNav v-if="!isLinksPage" />
       <slot />
-      <OrganismFooterSection v-if="!isLinksPage" />
+      <MoleculesMyFooterNav v-if="!isLinksPage" />
     </div>
   </main>
 </template>

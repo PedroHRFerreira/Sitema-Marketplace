@@ -11,8 +11,9 @@ export default defineComponent({
     const modalClosed = () => {
       isModalVisible.value = false;
     };
-    return {
-      cards: [
+
+    const cards = computed(() => {
+      return [
         {
           imageSrc: "/images/product/test-product.webp",
           imageAlt: "imagem do produto",
@@ -61,8 +62,11 @@ export default defineComponent({
           title: "Anuncio do produto",
           price: "10000",
         },
-      ],
-      itens: [
+      ];
+    });
+
+    const itens = computed(() => {
+      return [
         {
           message: "tipo do produto:",
           result: "test",
@@ -87,7 +91,12 @@ export default defineComponent({
           message: "Preço do produto:",
           result: "10000",
         },
-      ],
+      ];
+    });
+
+    return {
+      cards,
+      itens,
       isModalVisible,
       openModal,
       modalClosed,
@@ -96,7 +105,7 @@ export default defineComponent({
 });
 </script>
 <template>
-  <div>
+  <div class="section_on-page">
     <MoleculeMyHeaderNav />
     <MoleculeCardImagem
       v-if="isModalVisible === false"

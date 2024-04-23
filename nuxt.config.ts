@@ -2,7 +2,7 @@ import { NuxtConfig } from "nuxt";
 
 const config: NuxtConfig = {
   head: {
-    title: "test in title",
+    title: "teste no título",
     htmlAttrs: {
       lang: "pt-br",
     },
@@ -14,7 +14,7 @@ const config: NuxtConfig = {
       {
         hid: "description",
         name: "description",
-        content: "Test in description",
+        content: "Teste na descrição",
       },
       { name: "format-detection", content: "telephone=no" },
     ],
