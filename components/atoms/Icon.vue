@@ -18,7 +18,7 @@ const props = withDefaults(
     height: "24px",
     width: "24px",
     currentColor: "currentColor",
-  }
+  },
 );
 
 const icon = ref<string | Record<string, any>>("");
@@ -37,7 +37,7 @@ async function getIcon() {
     icon.value = rawIcon;
   } catch {
     console.error(
-      `[nuxt-icons] Icon '${props.name}' doesn't exist in 'assets/icons'`
+      `[nuxt-icons] Icon '${props.name}' doesn't exist in 'assets/icons'`,
     );
   }
 }
@@ -50,7 +50,7 @@ watchSyncEffect(() => {
   if (props.filled) {
     icon.value = icon.value.replace(
       /fill=".*?"/g,
-      `fill="${props.currentColor}"`
+      `fill="${props.currentColor}"`,
     );
   }
 
@@ -61,7 +61,7 @@ watchSyncEffect(() => {
   if (props.height) {
     icon.value = icon.value.replace(
       /height=".*?"/g,
-      `height="${props.height}"`
+      `height="${props.height}"`,
     );
   }
 });

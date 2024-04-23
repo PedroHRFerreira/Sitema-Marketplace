@@ -5,7 +5,7 @@ export default defineComponent({
 </script>
 <template>
   <article>
-    <OrganismsMarketplace />
+    <OrganismMarketplace />
   </article>
 </template>
 <style scoped lang="scss">
